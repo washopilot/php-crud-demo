@@ -6,7 +6,7 @@ $conn = mysqli_connect(
   'localhost',
   'root',
   'root1979',
-  'php_msql_crud'
+  'php_msql'
 );
 
 // if (isset($conn)) {
