@@ -6,7 +6,7 @@ if (isset($_GET["id"])) {
   $query = "DELETE FROM task WHERE id = $id";
   $result = mysqli_query($conn, $query);
   if (!isset($result)) {
-    die("Se jodió todo");
+    die("Query failed");
   }
   $_SESSION['message'] = 'Task removed successfully';
   $_SESSION['message_type'] = 'danger';
